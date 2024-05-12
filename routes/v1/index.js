@@ -3,7 +3,7 @@ const router = express.Router();
 
 const buyerRoutes = require('./buyerRoutes');
 const productRoutes = require('./productRoutes');
-const pincodeRoutes = require('./pincodeRoutes');
+const pincodeRoutes = require('./pincodeServiceabilityRoutes');
 const orderRoutes = require('./orderRoutes');
 
 router.use('/buyers', buyerRoutes);
