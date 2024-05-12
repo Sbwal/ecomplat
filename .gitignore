@@ -1,0 +1,14 @@
+node_modules/
+
+.breakpoints
+
+.ump
+
+package-lock.json
+
+.replit
+replit.nix
+
+.config
+
+.env
