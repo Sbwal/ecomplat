@@ -8,7 +8,7 @@ router.post('/', async (req, res) => {
         const product = await Product.create({ name, inventory, price, pickupAddress });
         res.json({ productId: product._id });
     } catch (err) {
-        res.status(500).json({ error: err.message });
+        res.status(500).json({ success: false, error: err.message });
     }
 });
 
@@ -18,7 +18,7 @@ router.get('/:id', async (req, res) => {
         if (!product) throw new Error('Product not found');
         res.json(product);
     } catch (err) {
-        res.status(404).json({ error: err.message });
+        res.status(404).json({ success: false, error: err.message });
     }
 });
 
